@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>spinner</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        .container{
+            height: 100px;
+            width: 100px;
+            border: 20px solid grey;
+            border-radius: 50%;
+            border-right-color: orange ;
+            border-left-color: green;
+            border-top-color: white;
+            border-bottom-color: white;
+            background-color: blue;
+
+
+            animation: spin 1s ease infinite ;
+        }
+        @keyframes spin{
+            100%{
+                transform: rotate(360deg);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    
+</body>
+</html>
